@@ -42,8 +42,6 @@ class Contact(models.Model):
     email = models.EmailField(verbose_name="Adresse email")
     phone_number = models.CharField(max_length=20, verbose_name="Numéro de téléphone", null=True, blank=True)
     address = models.CharField(max_length=255, verbose_name="Adresse", null=True, blank=True)
-    linkedin_url = models.URLField(verbose_name="LinkedIn", null=True, blank=True)
-    github_url = models.URLField(verbose_name="GitHub", null=True, blank=True)
     
     def __str__(self):
         return self.email
